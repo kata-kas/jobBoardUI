@@ -2,71 +2,216 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Reset CSS */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+/* Remove default margin */
+body,
+#root,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
 }
 
+/* Remove default padding */
+html, #root{
+  padding: 0;
+}
+
+/* Remove default padding on body */
+body, #root{
+  padding: 0;
+}
+
+/* Set core body defaults */
+body, #root {
+  min-height: 100dvh;
+  min-width: 100dvw;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove border on images inside links */
+a img {
+  border: none;
+}
+
+/* Remove outline on active elements when clicked */
+a,
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: none;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Reset hyperlink styles */
+a {
+  color: inherit;
+  text-decoration: none;
 }
+
+/* Remove default styles on blockquote */
+blockquote {
+  quotes: none;
+}
+
+/* Prevent resizing on textarea */
+textarea {
+  resize: none;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reset form styles */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Remove default button styling */
+button {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Remove outline on focused elements */
+button:focus,
+input:focus {
+  outline: none;
+}
+
+/* Remove default styles on details element */
+details {
+  display: block;
+}
+
+/* Hide overflow on main element */
+main {
+  overflow: hidden;
+}
+
+/* Reset some default styles on form elements */
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Reset default styles on legend element */
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+  line-height: inherit;
+}
+
+/* Reset default styles on progress element */
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* Remove default styles on pre element */
+pre {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Remove default styles on code element */
+code {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Reset default styles on samp element */
+samp {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Remove default styles on sub and sup elements */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Reset default styles on audio and video elements */
+audio,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* Reset default styles on canvas element */
+canvas {
+  display: inline-block;
+}
+
+/* Reset default styles on template element */
+template {
+  display: none;
+}
+
+/* Hide broken images */
+[alt=""],
+img:not([alt]) {
+  display: none;
+}
+
+/* Reset styles for hidden elements */
+[hidden] {
+  display: none;
+}
+
+/* End Reset CSS */
